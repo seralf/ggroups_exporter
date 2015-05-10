@@ -1,0 +1,42 @@
+
+# characters encoding in raw messages
+
+example:
+```
+=C3=A8	-	C3 A8	-	è
+```
+
+----
+
+
+# search
+
+https://groups.google.com/forum/#!topicsearchin/spaghettiopendata/{options}/{group_path}/{topic_path}
+
+where {options} is a list of the following (not yet complete)
+
+before:YYYY/MM/DD
+after:YYY/MM/DD
+tag:tag-name
+
+
+
+----
+
+example: a single message
+
+	https://groups.google.com/d/msg/spaghettiopendata/58Wfrxw-KrI/LaBagYeD4pcJ
+
+
+example: searching between tow dates, with a tag
+
+	https://groups.google.com/forum/#!topicsearchin/spaghettiopendata/before$3A2012$2F08$2F22$20after$3A2012$2F07$2F22$20tag$3Atwitter
+	
+then select a topic
+
+	https://groups.google.com/forum/#!topicsearchin/spaghettiopendata/before$3A2012$2F08$2F22$20after$3A2012$2F07$2F22$20/spaghettiopendata/58Wfrxw-KrI
+	
+NOTE: once selected, the topic will add its sub-path to the previous url
+NOTE: in the url for search the tag name:value are concatenated and url-encoded, with a `$` char in place of the usual `%` symbol.
+
+
