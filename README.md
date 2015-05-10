@@ -14,6 +14,7 @@ The messages are exported as single files in `.eml` format, using the folder str
 
 **NOTE**: this version is very work-in-progress: the original single scala script has been refactorized to different classes, to enable concurrent downloads.
 
+
 ## TODO
 
 0. rewrite main classes into proper unit tests
