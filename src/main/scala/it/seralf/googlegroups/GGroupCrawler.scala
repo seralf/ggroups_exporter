@@ -27,10 +27,17 @@ class GGroupCrawler(ggroup_name: String, conf: Config) {
   private def topics_iterator(doc: Document) = {
     doc.select("tr td.subject a")
       .par.toStream
-      .map {
+      .flatMap {
         el =>
           val topic_url = new URL(el.attr("abs:href"))
-          new GGTopicCrawler(conf).parse(topic_url)
+          try {
+            val topic = new GGTopicCrawler(conf).parse(topic_url)
+            Some(topic)
+          } catch {
+            case e: Throwable =>
+              logger.error(s"ERROR with topic ${topic_url}\n{}", e.getMessage)
+              None
+          }
       }
   }
 

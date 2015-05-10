@@ -54,6 +54,7 @@ class GGTopicCrawler(conf: Config) {
       }
 
     GGTopic(topic_id, topic_url, msgs)
+
   }
 
   private def getMsgMeta(ggroup: String, topic_id: String, msg: Element): GGMsgMeta = {

@@ -17,6 +17,7 @@ The messages are exported as single files in `.eml` format, using the folder str
 
 ## TODO
 
+0. fix errors / exceptions handling
 0. rewrite main classes into proper unit tests
 0. push the development branch for AKKA version
 0. publish the companion library for API / navigation
