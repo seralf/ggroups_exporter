@@ -22,3 +22,7 @@ The messages are exported as single files in `.eml` format, using the folder str
 0. push the development branch for AKKA version
 0. publish the companion library for API / navigation
 
+----
+
+
+[![I Love Open Source](http://www.iloveopensource.io/images/logo-lightbg.png)](http://www.iloveopensource.io/users/seralf)
