@@ -1,3 +1,4 @@
+
 bin
 *.class
 
@@ -17,4 +18,7 @@ EXPORT
 *.jar
 *.war
 *.ear
+
+.cache-main
+.cache-tests
 
